@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>full screen slide</title>
+	<link rel="stylesheet" type="text/css" href="fullScreenSlider.css">
+</head>
+<body>
+	
+	<div id="slide-wrap">
+		<div class="item"></div>
+		<div class="item"></div>
+		<div class="item"></div>
+		<div class="item"></div>
+		<div class="item"></div>
+		<div class="item"></div>
+	</div>
+
+	<script src="fullScreenSlider.js"></script>
+	<script>
+		var mySlider = new plugIn.slider().init({
+			parent:'#slide-wrap',
+			itemName: ".item",
+			speed: 500,
+			slideType: "ease-in-out"
+		});
+	</script>
+</body>
+</html>
